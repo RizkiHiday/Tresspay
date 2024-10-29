@@ -1,0 +1,39 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // START: FlutterFire Configuration
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+}
+
+android {
+    namespace = "com.example.registapp" // Ganti dengan namespace yang sesuai
+    compileSdk = 34 // Pastikan menggunakan compile SDK terbaru yang Anda butuhkan
+    ndkVersion = flutter.ndkVersion // Ini sesuai dengan konfigurasi Flutter Anda
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.registapp" // ID aplikasi yang sesuai
+        minSdk = 23 // Ubah dari flutter.minSdkVersion ke 23
+        targetSdk = 33 // Pastikan menggunakan target SDK yang sesuai
+        versionCode = 1 // Sesuaikan dengan versi yang Anda inginkan
+        versionName = "1.0" // Sesuaikan dengan versi yang Anda inginkan
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // Gunakan signingConfig yang sesuai untuk rilis
+        }
+    }
+}
+
+flutter {
+    source = "../.." // Pastikan ini sesuai dengan struktur proyek Anda
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "385644191410",
+    "project_id": "regist-4905e",
+    "storage_bucket": "regist-4905e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385644191410:android:d3d79984339aeb206073ab",
+        "android_client_info": {
+          "package_name": "com.example.registapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAOUEpBNTIOIDn4wJYpTUIQMEyR2s2i-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
