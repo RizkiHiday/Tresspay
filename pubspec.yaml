@@ -21,6 +21,9 @@ dependencies:
   provider: ^6.1.2
   image_picker: ^1.1.2
   firebase_storage: ^12.3.4
+  json_annotation: ^4.9.0
+  url_launcher: ^6.3.1
+ 
 
 dev_dependencies:
   flutter_test:
@@ -33,11 +36,3 @@ flutter:
   # Tambahkan aset di bawah bagian flutter
   assets:
     - assets/splash.jpg
-
-flutter_native_splash:
-  color: "#FE724C"  # Warna background splash screen
-  image: assets/splash.jpg  # Path untuk gambar splash screen
-  android: true  # Aktifkan untuk Android
-  ios: true  # Aktifkan untuk iOS
-  web: false  # Nonaktifkan jika tidak ingin web splash screen
-  fullscreen: false  # Mode layar penuh untuk splash screen
