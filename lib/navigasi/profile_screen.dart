@@ -108,11 +108,8 @@ class ProfileScreen extends StatelessWidget {
                       CircleAvatar(  
                         radius: 50,  
                         backgroundColor: Colors.pinkAccent,  
-                        child: Icon(  
-                          Icons.person,  
-                          size: 50,  
-                          color: Colors.white,  
-                        ),  
+                        backgroundImage: AssetImage('assets/avatar.jpg'), // Gambar avatar lokal  
+                        child: null, // Gambar sudah diambil dari AssetImage  
                       ),  
                       SizedBox(height: 16),  
                       Text(  
@@ -174,7 +171,6 @@ class ProfileScreen extends StatelessWidget {
                             _buildProfileOption(Icons.location_on, 'Address'),  
                             _buildProfileOption(Icons.payment, 'Payment method'),  
                             _buildProfileOption(Icons.card_giftcard, 'Voucher'),  
-                            _buildProfileOption(Icons.favorite, 'My Wishlist'),  
                             _buildProfileOption(Icons.star, 'Rate this app'),  
                             _buildProfileOption(Icons.logout, 'Log out', onTap: () async {  
                               await _auth.signOut();  

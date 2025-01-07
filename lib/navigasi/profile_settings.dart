@@ -241,7 +241,8 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             CircleAvatar(  
                               radius: 50,  
                               backgroundColor: Colors.pinkAccent,  
-                              child: Icon(Icons.person, size: 50, color: Colors.white),  
+                              backgroundImage: AssetImage('assets/avatar.jpg'), // Gambar avatar lokal  
+                              child: null, // Gambar sudah diambil dari AssetImage  
                             ),  
                             Positioned(  
                               bottom: 0,  

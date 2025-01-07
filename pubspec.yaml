@@ -23,6 +23,8 @@ dependencies:
   firebase_storage: ^12.3.4
   json_annotation: ^4.9.0
   url_launcher: ^6.3.1
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
  
 
 dev_dependencies:
@@ -35,4 +37,11 @@ flutter:
 
   # Tambahkan aset di bawah bagian flutter
   assets:
-    - assets/splash.jpg
+    - assets/tresspay.png
+    - assets/s1.png
+    - assets/s2.png
+    - assets/s3.png
+    - assets/s4.png
+    - assets/s5.png
+    - assets/s6.png
+    - assets/avatar.jpg
